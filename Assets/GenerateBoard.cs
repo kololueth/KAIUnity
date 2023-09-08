@@ -16,6 +16,7 @@ public class GenerateBoard : MonoBehaviour
             for (int j = 0; j < Dimensions; j++){
                 GameObject temp = Instantiate(BoardQuadrant);
                 temp.transform.position = new Vector3(5 * j, 0, 5 * i);
+                temp.name = "BoardQuadrant" + i + j;
             }
         }
     }
